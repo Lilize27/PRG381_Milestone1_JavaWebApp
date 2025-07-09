@@ -1,22 +1,31 @@
-<%-- 
-    Document   : register
-    Created on : 09 Jul 2025, 09:41:06
-    Author     : Cosmo
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Register</title>
-    </head>
-    <body>
-        <form action="RegisterServlet" method="post">
-        Username: <input type="text" name="username"/><br/>
-        Password: <input type="password" name="password"/><br/>
-        Email: <input type="text" name="email"/><br/>
-        <input type="submit" value="Register"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+
+    <h2>Register</h2>
+
+    <form action="register" method="post">
+        Student Number: <input type="text" name="student_number"><br/>
+        Name: <input type="text" name="name"><br/>
+        Surname: <input type="text" name="surname"><br/>
+        Email: <input type="text" name="email"><br/>
+        Phone: <input type="text" name="phone"><br/>
+        Password: <input type="password" name="password"><br/>
+        <input type="submit" value="Register">
     </form>
-    </body>
+
+    <%-- Show error or success message --%>
+    <p style="color:red;">
+        <%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>
+    </p>
+    <p style="color:green;">
+        <%= request.getAttribute("message") != null ? request.getAttribute("message") : "" %>
+    </p>
+
+</body>
 </html>
