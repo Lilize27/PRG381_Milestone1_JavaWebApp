@@ -12,11 +12,14 @@
         <title>Login</title>
     </head>
     <body>
-        <form action="RegisterServlet" method="post">
-        Username: <input type="text" name="username"/><br/>
-        Password: <input type="password" name="password"/><br/>
-        Email: <input type="text" name="email"/><br/>
-        <input type="submit" value="Register"/>
+        <form action="LoginServlet" method="post">
+        Username: <input type="text" name="student_number" required/><br/>
+        Password: <input type="password" name="password" required/><br/>
+        <input type="submit" value="Login"/>
     </form>
+         <%-- show error message if login fails --%>
+        <p style="color:red">
+            <%= request.getAttribute("error") != null ? request.getAttribute("error") : "" %>
+        </p> 
     </body>
 </html>
