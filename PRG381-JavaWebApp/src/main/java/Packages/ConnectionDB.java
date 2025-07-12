@@ -14,7 +14,17 @@ public class ConnectionDB {
     private static final String USER = "postgres";
     private static final String PASSWORD = "";
 
+//    public static Connection getConnection() throws SQLException {
+//        return DriverManager.getConnection(URL, USER, PASSWORD);
+//    }
+    
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+    try {
+        Class.forName("org.postgresql.Driver");
+    } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+        throw new SQLException("PostgreSQL JDBC Driver not found.");
     }
+    return DriverManager.getConnection(URL, USER, PASSWORD);
+}
 }

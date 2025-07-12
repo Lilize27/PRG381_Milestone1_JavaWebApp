@@ -5,10 +5,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>index</title>
+        <title>Student Wellness System</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
-        
-    </body>
+    <header>
+    <h1>Welcome to the Student Wellness System</h1>
+    </header> 
+    <div class="links">
+            <div class="card">
+    <p><a href="login.jsp">Login</a> | <a href="register.jsp">Register</a></p>
+    </div>
+        </div>
+</body>
 </html>
