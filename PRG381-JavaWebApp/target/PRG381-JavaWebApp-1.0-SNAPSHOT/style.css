@@ -6,17 +6,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : 11 Jul 2025, 19:49:06
     Author     : User
 */
-/* Reset default styles for consistency */
-* {
+*{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding:0;
+    box-sizing: border-box;  
 }
 
-/* Body styling with wellness theme */
-body {
+/*Body*/
+body{
     font-family: 'Roboto', sans-serif;
-    background-color: #E3F2FD; /* Soft blue background */
+    background-color: #E3F2FD;
     color: #333;
     line-height: 1.6;
     display: flex;
@@ -24,12 +23,12 @@ body {
     min-height: 100vh;
 }
 
-/* Header styling */
-header {
-    background: linear-gradient(to right, #A5D6A7, #81C784); /* Calming green gradient */
+/*Header*/
+header{
+    background: linear-gradient(to right, #A5D6A7, #81C784);
     color: white;
     padding: 1rem;
-    text-align: center;
+    text-align:center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -37,53 +36,53 @@ header h1, header h2 {
     font-size: 2rem;
 }
 
-/* Main content container */
-.container {
+/*Container*/
+.container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex: 1;
     padding: 2rem;
 }
 
-/* Card for content */
-.card {
+/*Card*/
+.card{
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    max-width: 600px;
-    width: 100%;
+    padding: 2.5rem;
+    max-width:600px;
+    width:100%;
     text-align: center;
 }
 
-.card h2 {
-    color: #2E7D32; /* Dark green for headings */
+.card h2{
+    color: #2E7D32;
     margin-bottom: 1rem;
 }
 
-.card p {
-    color: #455A64; /* Subtle gray for text */
-    margin-bottom: 1.5rem;
+.card p{
+    color: #455A64;
+    margin-bottom:1.5rem;
 }
 
-/* Form styling for login and register */
-form {
+/*Form for login and register*/
+form{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem; /* Increased gap for clearer vertical layout */
+    gap:1.2rem;
 }
 
-input[type="text"], input[type="password"] {
-    padding: 0.8rem;
+input[type="text"], input[type="password"]{
+    padding:0.8rem;
     border: 1px solid #B0BEC5;
     border-radius: 5px;
     font-size: 1rem;
     width: 100%;
 }
 
-input[type="submit"] {
-    background: linear-gradient(to right, #A5D6A7, #81C784); /* Green gradient */
+input[type="submit"]{
+    background: linear-gradient(to right, #A5D6A7, #81C784);
     color: white;
     border: none;
     padding: 0.8rem;
@@ -98,9 +97,9 @@ input[type="submit"]:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Logout button styling */
+/*logout button*/
 .logout-btn {
-    background: linear-gradient(to right, #EF5350, #F44336); /* Red gradient */
+    background: linear-gradient(to right,#EF5350, #F44336);
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -115,8 +114,8 @@ input[type="submit"]:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Links styling for index.jsp */
-.links {
+/*index.jsp links*/
+.links{
     margin-top: 1rem;
 }
 
@@ -132,27 +131,27 @@ input[type="submit"]:hover {
     color: #1B5E20;
 }
 
-/* Error and success messages */
+/*Messages*/
 .error {
     color: #D32F2F;
     margin-top: 1rem;
 }
 
-.success {
+.success{
     color: #2E7D32;
     margin-top: 1rem;
 }
 
-/* Responsive design */
+/*Response*/
 @media (max-width: 600px) {
     header h1, header h2 {
         font-size: 1.5rem;
     }
-
+    
     .card {
-        padding: 1.5rem;
+        padding: 1.5rem;  
     }
-
+    
     input[type="submit"], .logout-btn {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;

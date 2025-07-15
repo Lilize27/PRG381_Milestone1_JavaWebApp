@@ -11,12 +11,15 @@
     </head>
     <body>
     <header>
-    <h1>Welcome to the Student Wellness System</h1>
+    <h1>Student Wellness System</h1>
     </header> 
-    <div class="links">
+    <div class="container">
             <div class="card">
-    <p><a href="login.jsp">Login</a> | <a href="register.jsp">Register</a></p>
+                <h2>Welcome to the Student Wellness System</h2>
+    <p class="links"><a href="login.jsp">Login</a> | <a href="register.jsp">Register</a></p>
     </div>
         </div>
 </body>
 </html>
+
+

@@ -21,8 +21,8 @@
             <div class="card">
                 <h2>Login</h2>
         <form action="LoginServlet" method="post">
-        <input type="text" name="student_number" required/><br/>
-        <input type="password" name="password" required/><br/>
+            <input type="text" name="student_number" placeholder="Enter student number" required/><br/>
+            <input type="password" name="password" placeholder="Enter password" required/><br/>
         <input type="submit" value="Login"/>
     </form>
          <%-- show error message if login fails --%>

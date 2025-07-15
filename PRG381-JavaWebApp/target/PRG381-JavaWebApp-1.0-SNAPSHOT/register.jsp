@@ -22,12 +22,12 @@
     <h2>Register</h2>
 
     <form action="register" method="post">
-        Student Number: <input type="text" name="student_number"><br/>
-        Name: <input type="text" name="name"><br/>
-        Surname: <input type="text" name="surname"><br/>
-        Email: <input type="text" name="email"><br/>
-        Phone: <input type="text" name="phone"><br/>
-        Password: <input type="password" name="password"><br/>
+        Student Number: <input type="text" name="student_number" placeholder="Enter student number"><br/>
+        Name: <input type="text" name="name" placeholder="Enter name"><br/>
+        Surname: <input type="text" name="surname" placeholder="Enter surname"><br/>
+        Email: <input type="text" name="email" placeholder="Enter email"><br/>
+        Phone: <input type="text" name="phone" placeholder="Enter phone number"><br/>
+        Password: <input type="password" name="password" placeholder="Enter password" ><br/>
         <input type="submit" value="Register">
     </form>
 
